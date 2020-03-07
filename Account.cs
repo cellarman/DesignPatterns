@@ -8,12 +8,24 @@ namespace DesignPatterns
     {
         private float balance;
 
-        public void setBalance(float balance)   
+        public void deposit(float amount)
                 {
-                    this.balance = balance;  //SETTER
-                      if (balance >0)
-                        this.balance = balance;
+         //same as below   this.balance = this.balance + amount;
+                if (amount >0 )
+                 this.balance += amount;
+
+
                 }
+
+
+        public void withdraw(float amount)
+                 {
+            
+                if (amount > 0) 
+                  
+                    this.balance -= amount;
+                  }
+
 
                 public float getBalance ()
                 {

@@ -2,13 +2,19 @@
 
 namespace DesignPatterns
 {
-    internal class Program
+     class Program
     {
-        private static void Main(string[] args)
+         static void Main(string[] args)
         {
-            var account = new Account();
-           // account.balance = 10;
-           // Pushed to Remote Repo
+            var account = new Account();  //create object
+            account.deposit(amount: 10);
+            account.withdraw(amount: 5);
+
+            Console.WriteLine(account.getBalance());
+
+
+
+            // Pushed to Remote Repo
 
 
 
